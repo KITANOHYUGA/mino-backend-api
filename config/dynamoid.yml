@@ -1,0 +1,12 @@
+development:
+  adapter: aws_sdk_v3
+  access_key: fake
+  secret_key: fake
+  region: ap-northeast-1
+  endpoint: http://localhost:8000
+
+production:
+  adapter: aws_sdk_v3
+  access_key: <%= ENV['AWS_ACCESS_KEY_ID'] %>
+  secret_key: <%= ENV['AWS_SECRET_ACCESS_KEY'] %>
+  region: ap-northeast-1
